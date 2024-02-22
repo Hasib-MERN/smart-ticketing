@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<style>
+  li {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 180px;
+  }
+  .seatSelect {
+    background-color: white;
+  }
+  .changeable {
+    background-color: white;
+  }
+</style>
+
+<body class="px-2 md:px-5 lg:px-10 ">
+  <header>
+    <div class="relative">
+      <!-- navbar section -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+          </div>
+          <a class=" text-2xl font-bold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li>
+              <p>About</p>
+            </li>
+            <li>
+              <p>Destination</p>
+            </li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn"><span class="text-[#1DD100] font-bold text-xl">Bus</span><img src="images/bus-icon.png"
+              alt=""></a>
+        </div>
+      </div>
+      <!-- banner section -->
+      <div class="hero min-h-screen rounded-3xl" style="background-image: url(images/banner.png);">
+
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">End-To-End Travel </h1>
+            <h1 class="text-5xl font-bold  text-[#1DD100]">P-Paribahan</h1>
+
+            <p class="mt-5 mb-5 min-w-56">"My Paribahan facility provides efficient and reliable transportation
+              services,
+              catering to the diverse needs of commuters".</p>
+            <button id="section1" onclick="click()" class="btn border-none  font-bold text-xl bg-[#1DD100]">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- card section -->
+
+    <!-- card 1 -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-1 lg:gap-5 relative bottom-10 lg:ml-5 lg:mr-5">
+
+      <!-- card 1 -->
+      <div class="hero bg-white shadow-md rounded-xl">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="images/people.png" class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">500K+</h1>
+            <p>Registered users</p>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="hero bg-white shadow-md rounded-xl">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="images/ticket-cupon.png" class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">500K+</h1>
+            <p>Registered users</p>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="hero bg-white shadow-md rounded-xl">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="images/stoppage.png" class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">500K+</h1>
+            <p>Registered users</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="text-3xl font-semibold text-center mt-10">Best Offers For You</h1>
+
+    <!-- discounte section -->
+
+    <div class="grid lg:grid-cols-2 gap-5 mt-5">
+
+      <div class="bg-[#FFBF0F] flex rounded-xl h-36 ">
+        <div class="p-7">
+          <h1 class="text-2xl font-extrabold ">15% OFF</h1>
+          <p>on your next purchase</p>
+          <p>use by january 2024</p>
+        </div>
+
+        <div>
+          <img src="images/cupon-devider.png" class=" h-36 ml-0 lg:ml-40" />
+        </div>
+
+        <div class="p-12">
+          <h1 class="text-2xl">NEW25</h1>
+          <p>Cupon code</p>
+        </div>
+      </div>
+      <div class="bg-[#F78C9C] flex rounded-xl h-36">
+        <div class="p-7">
+          <h1 class="text-2xl font-extrabold ">20% OFF</h1>
+          <p>on your next purchase</p>
+          <p>use by january 2024</p>
+        </div>
+
+        <div>
+          <img src="images/cupon-devider.png" class="h-36 ml-0 lg:ml-40" />
+        </div>
+
+        <div class="p-12">
+          <h1 class="text-2xl">Couple 20</h1>
+          <p>Cupon code</p>
+        </div>
+      </div>
+  </header>
+
+  <main>
+    <div class="justify-items-center mt-6 mb-5 mx-32 lg:mx-96">
+      <p class="border-2 border-[#1DD100] text-[#1DD100] p-3 text-center rounded-xl font-bold">
+        See All Offers
+      </p>
+    </div>
+
+
+    <!-- ticket pricing step -->
+
+    <div class="bg-[#F7F8F8] rounded-lg">
+      <div class="text-center pt-5 ">
+
+        <h1 class="text-2xl font-bold mt-14 pt-5 mb-3">P.H Paribahan</h1>
+        <p>Our commitment is to enhance the overall transportation experience, ensuring seamless journeys for passengers
+          in a <br>convenient and customer-friendly manner."
+      </div>
+
+      <div  class="grid grid-cols-1 lg:grid-cols-2 bg-white rounded-xl mt-10 shadow-xl relative">
+        <div class="mt-6 ml-6 p-5">
+          <div class="flex py-5 space-x-5 lg:space-x-56">
+            <div class="">
+              <h1 class="text-2xl font-bold">Greenline Paribahan</h1>
+              <p>Coach-009-WEB ! AC_Business</p>
+            </div>
+            <div class="flex bg-[#1DD10026]">
+              <img src="images/seat-green.png" alt="">
+              <p  class="text-[#1DD100]"><span id="all-seat">40</span> seats left</p>
+            </div>
+          </div>
+
+          <div class=" bg-[#F7F8F8] p-4 rounded-xl">
+            <div class="flex border-b-2 border-dashed space-x-52 
+            lg:space-x-96  py-5">
+              <p>Route</p>
+              <p>Dhaka- Sylhet</p>
+            </div>
+
+            <div class="flex border-b-2 border-dashed py-5 space-x-36 lg:space-x-96">
+              <p>Departure time</p>
+              <p>9:00 PM</p>
+            </div>
+
+            <div class="flex mt-5 gap-2 lg:gap-20">
+              <p class="bg-[#0307120D] p-4 rounded-xl">Boarding Point</p>
+              <p class="bg-[#0307120D] p-4 rounded-xl">Dropping Point - Bogura</p>
+              <p class="bg-[#0307120D] p-4 rounded-xl">Est. Time - 11 Hour</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute  right-0 lg:right-96">
+          <img src="images/info-devider.png" alt="">
+        </div>
+
+        <div class="ml-40 lg:ml-80 mt-5 lg:mt-28 p-10">
+          <img src="images/fare.png" alt="">
+          <h1 class="text-2xl font-bold"><span id="ticket-price">550</span> Taka</h1>
+          <h1 class="text-2xl font-semibold">Per Seat</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ticket section -->
+
+
+
+
+
+    <!-- seat section -->
+
+    <div id="section2" class="grid grid-cols-1 lg:grid-cols-2 gap-16 m-10 p-16 bg-white shadow-xl">
+      <div>
+        <div class="">
+          <div class="">
+            <h1 class="text-2xl font-bold border-b-2 border-dashed p-5">Slect your seat</h1>
+            <div class=" py-5 flex justify-between items-center border-b-2 border-dashed  ">
+              <div class="flex">
+                <img src="images/seat-gray.png" alt="">
+                <p>Available</p>
+              </div>
+              <div class="flex">
+                <img src="images/seat-green-filled.png" class="">
+                <p>Selected</p>
+              </div>
+            </div>
+
+            <div class="flex justify-end mt-5">
+              <button class="btn"><img src="images/str2-removebg-preview.png" class=" h-9 w-9 " alt=""></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="mt-10 flex justify-between items-center">
+            <p>A</p>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-8">A1</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-8">A2</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-8">A3</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-9">A4</button>
+          </div>
+          <div class="mt-10 flex justify-between items-center">
+            <p>B</p>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-8">B1</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-8">B2</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-9">B3</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-9">B4</button>
+          </div>
+          <div class="mt-10 flex justify-between items-center ">
+            <p>C</p>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-8">C1</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-8">C2</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-9">C3</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-9">C4</button>
+          </div>
+          <div class="mt-10 flex justify-between items-center">
+            <p>D</p>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-8">D1</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-8">D2</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-8">D3</button>
+            <button onclick="changeColor(this)" class="btn changeable seatSelect px-9">D4</button>
+          </div>
+          <div class="mt-10 flex justify-between items-center ">
+            <p>E</p>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">E1</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">E2</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">E3</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">E4</button>
+          </div>
+          <div class="mt-10 flex justify-between items-center">
+            <p>F</p>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">F1</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">F2</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">F3</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">F4</button>
+          </div>
+          <div class="mt-10 flex justify-between items-center ">
+            <p>G</p>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">G1</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">G2</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">G3</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">G4</button>
+          </div>
+          <div class="mt-10 flex justify-between items-center ">
+            <p>H</p>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">H1</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">H2</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">H3</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-8">H4</button>
+          </div>
+          <div class="mt-10 flex justify-between items-center">
+            <p>I</p>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">I1</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">I2</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">I3</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">I4</button>
+          </div>
+          <div class="mt-10 flex justify-between items-center">
+            <p>J</p>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">J1</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">J2</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">J3</button>
+            <button onclick="changeColor(this)" class="btn seatSelect px-9">J4</button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- price calculate section -->
+
+      <div class="space-y-8">
+        <div>
+          <h1 class="border-b-2 border-dashed py-5 text-2xl font-bold">Select Your Seat</h1>
+
+          <div class="font-bold flex justify-between border-b-2 border-dashed py-5">
+            <div class="flex gap-1">
+              <p >Seat</p>
+              <p id="seat-count" class="bg-[#1DD100] text-center rounded-md  px-3">0</p>
+            </div>
+            <p>Class</p>
+            <p>Price</p>
+          </div>
+
+          <div class="border-b-2 border-dashed  flex">
+            <ul class="total-price" id="total-price">
+              <li class="">
+
+              </li>
+
+            </ul>
+            <!-- <div class="flex justify-between ">
+              <p>C2</p>
+              <p>Economy</p>
+              <p>550</p>
+            </div>
+            <div class="flex justify-between ">
+              <p>C2</p>
+              <p>Economy</p>
+              <p>550</p>
+            </div> -->
+          </div>
+
+          <div class="flex justify-between font-bold">
+            <h1>Total price</h1>
+            <h1>BDT <span id="total-pri">00 </span></h1>
+          </div>
+
+        </div>
+
+        <div class="flex">
+          <input id="cupon-code" type="text" placeholder="Have any cupon?" class=" py-3 rounded-l-xl px-5 w-full">
+
+          <div class=""  onclick="updateGrandTotalCost('apply-btn')">
+            <button  id="apply-btn" class="btn rounded-r-xl rounded-l-none bg-[#1DD100]">Apply</button>
+
+          </div>
+        
+        </div>
+
+        <div class="flex justify-between font-bold">
+          <h1>Grand total</h1>
+          <h1>BDT <span id="grand-total">00</span></h1>
+        </div>
+
+        <div class="space-y-8 mt-5">
+          <div class="">
+            <h1 class="font-bold">Passenger name*</h1>
+            <input type="text" placeholder="Enter Your Name" class=" py-3 rounded-l-xl px-3 w-full" required>
+          </div>
+          <div>
+            <h1 class="font-bold">Phone Number*</h1>
+            <input type="number" placeholder="Enter Your Name" class=" py-3 rounded-l-xl px-3 w-full" required>
+          </div>
+          <div>
+            <h1 class="font-bold">Enter Your Mail</h1>
+            <input type="email" placeholder="Enter Your Name" class=" py-3 rounded-l-xl px-3 w-full" required>
+          </div>
+        </div>
+
+        <button class="btn w-full bg-[#1DD100] mt-3">Next</button>
+
+        <div class="underline flex justify-between mt-5">
+          <p>Terms nad condition</p>
+          <p>Cancellation policy</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <p class="mt-20">a</p>
+
+
+  <script>
+    function changeColor(element) {
+      element.style.backgroundColor = "chartreuse";
+    }
+  </script>
+  <script src="seat.js"></script>
+</body>
+
+</html>
